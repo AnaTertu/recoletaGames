@@ -18,8 +18,8 @@ let cardHTML = '';
 
 images.forEach(img => {
     cardHTML +=
-    <div>
-        <img src="img/${img}">
-        <img src="img/recoleta.jpg">
-    </div>
+    // <div>
+    //     <img src="img/${img}">
+    //     <img src="img/recoleta.jpg">
+    // </div>
 });
