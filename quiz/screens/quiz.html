@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="widht=device-widht, initial-scale=1"> -->
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- <script src= "../js/app.js"></script>
+        <script src= "../js/question.js"></script> -->
+        <title>Quiz</title>
+    </head>
+    <body>
+        <div class="home-box custom-box">
+            <h3>Instruction: </h3>
+            <p>Total de questões 
+                <span class="total-question">5</span></p>
+            <button type="button" class="btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-box custom-box">
+            <div class="question-initial">
+                    Questão 1 de 5
+            </div>
+            
+            <div class="option-container">
+                <div class="question-number">
+                    Costuma comer?
+                </div>
+
+                <div class="imag">
+
+                        <img src="../image/crianca_so.PNG" alt="Criança_só" > 
+                        <div class="option">
+                            <div class="question-text">
+                                <span class="total-escolhidas">
+                                    A
+                                </span>
+                                Sozinha(o).
+                            </div>
+                        </div>
+                </div>
+
+                <div class="imag">
+
+                        <img src="../image/crianca_uniao.PNG" alt="Criança_só" >
+                        <div class="option">
+                            <div class="question-text">
+                                <span class="total-escolhidas">
+                                    B
+                                </span>
+                                Com a família ou amigos.
+                            </div>
+                        </div>
+
+                </div> 
+            </div>
+
+            <div class="next-button">
+                <button type="button" class="btn" onclik="next()"> Next </button>
+            </div>
+
+            <div class="answers">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+        </div>
+
+        <div class="quiz-box custom-box">
+            <div clas="result-box custom-box">
+                <h1>Resultado</h1>
+                <table>
+                    <tr>
+                        <td>Total de questões</td>
+                        <!-- <ta><span class="total-question">5</span></ta> -->
+                    </tr>
+                    <tr>
+                        <td>Escolhidas</td>
+                        <ta><span class="total-escolhidas">A - </span></ta>
+                    </tr>
+                    <tr>
+                        <td>Escolhidas</td>
+                        <!-- <ta><span class="total-escolhidas">B</span></ta> -->
+                    </tr>
+                    <tr>
+                        <td>Porcentagem</td>
+                        <ta><span class="total-percent">70.00%</span></ta>
+                    </tr>
+                </table>
+                <button type="button" class="btn">Voltar para página inicial.</button>
+            </div>
+        </div>
+    </body>
+</html>
