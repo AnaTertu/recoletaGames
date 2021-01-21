@@ -3,7 +3,7 @@
 body{
     margin: 0;
     font-size:16px;
-    background-color: #9ca5a4;
+    background-color: #75b8b0a4;
     font-family: 'Itim', cursive;
     font-weight: 400;
 }
@@ -16,8 +16,8 @@ body{
 }
 
 .custom-box{
-    max-width: 1000px;
-    background-color: rgb(153, 190, 153);
+    max-width: 1500px;
+    background-color: rgba(153, 190, 153, 0.699);
     margin: 40px auto;
     padding: 40px;
     border-radius: 100px;
@@ -42,7 +42,7 @@ body{
 .btn {
     margin-top: 20px;
     padding: 15px 45px;
-    background-color: #009688;
+    background-color: #00968770;
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -79,13 +79,17 @@ body{
     line-height: 22px;
     color:#240e49;
     border-radius: 5px;
-    margin-bottom: 10px;
     cursor: pointer;
 }
 
-.quiz-box .imag{
+.quiz-box .card{
     display: inline-block;
-    padding: 15px;
+    padding: 20px;
+}
+
+.quiz-box .card .imag{
+    height: 300px;
+    width: 500px;
 }
 
 .quiz-box .answers{
@@ -96,10 +100,24 @@ body{
     height: 40px;
     width: 40px;
     display: inline-block;
-    background-color: #cccccc;
     border-radius: 50%;
     margin-right: 3px;
     margin-top: 10px;
+}
+
+.quiz-box .answers .a{
+    border: 5px solid #53db2a;
+    background-color: #abec97;
+}
+
+.quiz-box .answers .b{
+    border: 5px solid #f9fd04;
+    background-color: #fafcb0;
+}
+
+.quiz-box .answers .c{
+    border: 2px solid #ee0d0d;
+    background-color: #f78a8a;
 }
 
 .result-box{
