@@ -1,58 +1,93 @@
 <link rel="stylesheet" href="../css/style.css">
 <script src="../../js/bootstrap.bundle.min.js"></script>
+<script src="../js/question.js"></script>
+
+<div id="quizmain">
+    <div id="quizcontainer">
 
         <div class="quiz-box custom-box">
             <div class="question-initial">
-                    Questão 3 de 5
+                <h3>Question 3 of 5:</h3>
             </div>
-            
+
             <div class="option-container">
                 <div class="question-number">
-                    Costuma comer?
+                    <h1 id="qtext">
+                        Os pontos de coleta são de fácil acesso?
+                    </h1>
                 </div>
 
                 <div class="card">
+                    <div class="option">
+                        <div class="question-text">
 
-                        <img class="imag" src="../image/verduras.jpg" alt="Criança_só"> 
-                        <div class="option">
-                            <div class="question-text">
-                                <span class="total-escolhidas">
-                                    A
-                                </span>
-                                Sozinha(o).
+                            <form role="form" id="quizform" name="quizform" action="quiztest.asp?qtest=JS"
+                                method="post">
+                                <input type="hidden" name="starttime" value="1/21/2021 11:20:18 PM">
+                                <input type="hidden" name="answers" value="0000000000000000000000000">
+                                <input type="hidden" name="nextnumber">
+                                <input type="hidden" name="prevnumber" value="1">
+                                <div style="position:relative;width:100%;">
+                                    <div id="altcontainer" class="notranslate">
+
+                                        <label class="radiocontainer" id="label4">
+                                            <img class="imag" src="../image/destino1.jpg" alt="Criança_só"
+                                                width="300px">
+                                            <br />
+                                            <h2>
+                                                <input type="radio" name="quiz" id="5"
+                                                onclick="clickRadio(this)" value="">
+                                                <span class="checkmark"></span>
+                                                &lt; Sim, fácil acesso. &gt;
+                                            </h2>
+                                        </label>
+
+                                        <label class="radiocontainer" id="label2">
+                                            <img class="imag" src="../image/destino2.jpg" alt="Criança_só"
+                                                width="300px">
+                                            <br />
+                                            <h2>
+                                                <input type="radio" name="quiz" id="6"
+                                                onclick="clickRadio(this)" value="6">
+                                                <span class="checkmark"></span>
+                                                &lt; Não, é muito distante, ou, <br/> não temos coleta seletiva. &gt;
+                                            </h2>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="home-box custom-box">
+                                <a class="nav-link" href="quiz_4.html">
+                                    <button type="button" class="btn" id="but">
+                                        Next | Próxima
+                                    </button>
+                                    <input class="btn" type="text" readonly="" id="timespent" value="0:00">
+                                </a> 
+                                <a class="nav-link" href="quiz_2.html">
+                                    <button type="button" class="btn" id="but">
+                                        Come back | Voltar
+                                    </button>
+                                </a>
+                                <div class="answers">
+                                    <div class="a">1</div>
+                                    <div class="a">2</div>
+                                    <div class="b">3</div>
+                                    <div class="c">4</div>
+                                    <div class="c">5</div>
+                                </div>
+
                             </div>
-                        </div>
-                </div>
-
-                <div class="card">
-
-                        <img class="imag" src="../image/frutas.jpg" alt="Criança_só" >
-                        <div class="option">
-                            <div class="question-text">
-                                <span class="total-escolhidas">
-                                    B
-                                </span>
-                                Com a família ou amigos.
+                
+                            <div class="w3-panel w3-note linktotutdiv">
+                                <h2><a href=""> Dicas </a></h2>
                             </div>
+
                         </div>
-
-                </div> 
+                    </div>
+                </div>                
             </div>
-
-            <div class="home-box custom-box">
-                <a class="nav-link" href="quiz_4.html">
-                    <button type="button" class="btn">
-                        Next | Próxima
-                    </button>
-                </a>           
-            </div>
-
-            <div class="answers">
-                <div class="a"></div>
-                <div class="a"></div>              
-                <div class="b"></div>
-                <div class="c"></div>
-                <div class="c"></div>
-            </div>
-            
         </div>
+    </div>
+</div>

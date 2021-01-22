@@ -17,8 +17,9 @@
     >
     
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <script src= "../js/app.js"></script>
-    <script src= "../js/question.js"></script> -->
+    <!-- <script src= "../js/app.js"></script> -->
+    <script src= "../js/question.js"></script>
+    <!-- <script src= "../js/result.js"></script> -->
 
     <title>Quiz| Recoleta</title>
     </head>
@@ -61,36 +62,54 @@
             </div>
         </header>
 
+        <div id="quizmain">
+            <div id="quizcontainer">
+
         <div class="quiz-box custom-box">
             <div clas="result-box custom-box">
-                <h1>Resultado</h1>
+                <h3>Resultado</h3>
                 <table>
                     <tr>
                         <td>Total de questões</td>
                         <!-- <ta><span class="total-question">5</span></ta> -->
                     </tr>
                     <tr>
-                        <td>Escolhidas</td>
-                        <ta><span class="total-escolhidas">A - </span></ta>
+                        <td>Escolhidas -
+                            <ta><span class="total-escolhidas"> A </span></ta>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Escolhidas</td>
-                        <!-- <ta><span class="total-escolhidas">B</span></ta> -->
-                    </tr>
-                    <tr>
-                        <td>Porcentagem</td>
-                        <ta><span class="total-percent">70.00%</span></ta>
+                        <td>Escolhidas - 
+                            <ta><span class="total-escolhidas"> B </span></ta>
+                        </td>
                     </tr>
                 </table>
                 <div class="home-box custom-box">
-                    <a class="nav-link" href="quiz_1.html">
-                        <button type="button" class="btn">
-                            Start again | Começar novamente
+                    <a class="nav-link" href="quiz.html">
+                        <button type="button" class="btn" id="but">
+                            Restart | Começar novamente
                         </button>
-                    </a>           
+                        <input class="btn" type="text" readonly="" id="timespent" value="0:00">
+                        <div class="answers">
+                            <div class="a">1</div>
+                            <div class="a">2</div>
+                            <div class="a">3</div>
+                            <div class="a">4</div>
+                            <div class="a">5</div>
+                        </div>
+                    </a>         
                 </div>
             </div>
         </div>
+
+            </div>
+          </div>
+          
+            
+            </div>
+          </div>
+
+          
     
         <footer class="rodape">
         © Copyright Recoleta - 2021
