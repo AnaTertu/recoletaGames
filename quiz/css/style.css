@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? family = Itim & display = swap');
 
 body{
+    height: 100vh;
     margin: 0;
     font-size:16px;
     background-color: #75b8b0a4;
@@ -16,8 +17,8 @@ body{
 }
 
 .custom-box{
-    max-width: 1300px;
-    max-height: 1200px;
+    max-width: 1200px;
+    max-height: 1100px;
     background-color: rgba(153, 190, 153, 0.699);
     margin: 40px auto;
     padding: 40px;
@@ -56,7 +57,7 @@ body{
 }
 
 #but{  
-    padding: 15px 30px;
+    padding: 15px 20px;
 }
 
 #timespent{
@@ -101,8 +102,8 @@ body{
 }
 
 .quiz-box .card .imag{
-    height: 300px;
-    width: 500px;
+    height: 280px;
+    width: 450px;
 }
 
 .quiz-box .answers{
